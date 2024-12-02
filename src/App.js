@@ -1,15 +1,22 @@
-import './App.css';
 import BMICalculator from './components/BmiCalc';
-import LoginPage from './components/LoginPage';
+import Login from './components/LoginPage';
+import Navbar from './components/NavBar';
 import SignupForm from './components/SignUp';
+import { Route,BrowserRouter,Routes } from 'react-router';
 
 function App() {
   return (
     <>
-      {/* <LoginPage></LoginPage> */}
-      {/* <BMICalculator/> */}
-      <SignupForm/>
-    </>
+      
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route index element={<SignupForm/>} />
+          <Route exact path="/loginpage" element={<Login/>}/>
+          <Route exact path="/bmicalc" element={<BMICalculator/>}/>
+        </Routes>
+      </BrowserRouter>
+      </>
   );
 }
 

@@ -46,12 +46,12 @@ const SignupForm = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h2 className="text-center">Signup</h2>
+    <div className="container mt-1">
+      <h2 className="text-center">Sign-Up</h2>
       {error && <div className="alert alert-danger">{error}</div>}
       {success && <div className="alert alert-success">{success}</div>}
       <form onSubmit={handleSubmit}>
-        <div className="mb-3">
+        <div>
           <label htmlFor="name" className="form-label">Name</label>
           <input
             type="text"
@@ -63,7 +63,7 @@ const SignupForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label htmlFor="mobile" className="form-label">Mobile Number</label>
           <input
             type="tel"
@@ -75,7 +75,7 @@ const SignupForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label htmlFor="email" className="form-label">Email</label>
           <input
             type="email"
@@ -87,7 +87,7 @@ const SignupForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label htmlFor="password" className="form-label">Password</label>
           <input
             type="password"
@@ -99,7 +99,7 @@ const SignupForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label htmlFor="confirmPassword" className="form-label">Confirm Password</label>
           < input
             type="password"
@@ -111,7 +111,7 @@ const SignupForm = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="mb-1">
           <label htmlFor="gender" className="form-label">Gender</label>
           <select
             className="form-select"
@@ -126,8 +126,8 @@ const SignupForm = () => {
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
-        </div>
-        <button type="submit" className="btn btn-primary">Sign Up</button>
+        </div >
+        <center><button type="submit" className="btn btn-primary w-50 mt-1">Sign Up</button></center>
       </form>
     </div>
   );
