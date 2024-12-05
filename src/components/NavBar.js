@@ -17,6 +17,9 @@ const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/bmicalc">BMI_Calc</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/bodyfatpercent">BodyFat-%</Link>
+            </li>
           </ul>
         </div>
       </div>
